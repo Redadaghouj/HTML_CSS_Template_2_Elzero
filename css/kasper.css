@@ -1,0 +1,134 @@
+/* Global Rules */
+
+:root {
+    --main-color: #19C8FA;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Header */
+
+.header {
+    background-image: url(../images/landing.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(1, 1, 1, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff7c;
+    position: relative;
+    z-index: 999;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+.header .nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-items-list {
+    display: flex;
+}
+
+.header .nav-items-list li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 40px 15px;
+    text-transform: capitalize;
+    font-size: 14px;
+    transition: color .5s;
+    position: relative;
+}
+
+.header .nav-items-list li a:hover,
+.header .nav-items-list li a.active,
+.header .nav-items-search-icon:hover {
+    color: var(--main-color);
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: -1px;
+    left: 0;
+}
+
+.header .nav-items-list li a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: -1px;
+    left: 0;
+}
+
+.header .nav-items-search-icon {
+    color: #fff;
+    border-left: 1px solid #fff;
+    padding: 5px 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color .5s;
+}
