@@ -636,3 +636,82 @@ button:hover {
     font-size: 14px;
     margin-top: -10px;
 }
+
+/* Testimonials & Skills */
+
+.testimonials,
+.skills {
+    width: 45%;
+}
+
+/* Testimonials */
+
+.testimonials-skills .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text {
+    text-align: center;
+}
+
+.text-title {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.text-desc {
+    color: var(--desc-color);
+    line-height: 2;
+    padding: 30px 0;
+}
+
+.testimonials-team {
+    margin: 20px 0;
+}
+
+.testimonials-team-card {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.testimonials-team-card img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.testimonials-team-card-text {
+    line-height: 1.7;
+    border-bottom: 1px solid #ddd;
+}
+
+.testimonials-team-card-text .caption {
+    text-align: right;
+    color: var(--desc-color);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.testimonials-circles-items {
+    text-align: center;
+}
+
+.testimonials-circles-items .circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    margin: 3px;
+    display: inline-block;
+}
+
+.testimonials-circles-items .circle:nth-child(2) {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+/* Skills */
