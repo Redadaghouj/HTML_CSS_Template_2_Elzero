@@ -14,9 +14,12 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
 }
 
 ul {
@@ -1106,11 +1109,11 @@ input[type="submit"]:hover {
     margin: 0 15px;
 }
 
-.footer-caption {
+.footer-copyright {
     margin-top: 65px;
 }
 
-.footer-caption span {
+.footer-copyright span {
     color: var(--main-color);
     font-weight: bold;
 }
